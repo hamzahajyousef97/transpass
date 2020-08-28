@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap.scss";
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.hr-size{
+    margin: 0% auto;
+    width: 70%;
+}
+@media screen and (max-width: 991px) {
+    .sidebar-collapse .navbar-collapse:before { 
+        background: linear-gradient(#958d7d 0,#000 80%) !important;
+    }
+}

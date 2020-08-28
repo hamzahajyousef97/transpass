@@ -1,0 +1,11 @@
+.nav-link {
+    font-size: 14px !important;
+}
+.d-sm-none {
+    display: block !important;
+}
+@media screen and (max-width: 991px) {
+    .d-sm-none {
+        display: none !important;
+    }
+}

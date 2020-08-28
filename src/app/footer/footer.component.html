@@ -1,0 +1,42 @@
+<footer class="footer" data-background-color="black">
+    <div *ngIf="globals.lang == 'en'" class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="/">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/contact">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            &copy;
+            {{data | date: 'yyyy'}}, Transpass Aviation Service LTD
+        </div>
+    </div>
+    <div *ngIf="globals.lang == 'tr'" class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="/">
+                        Ana Sayfa
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="/contact">
+                        Bize ulaş
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="copyright">
+            &copy;
+            {{data | date: 'yyyy'}}, Transpass Havacılık Servisi LTD
+        </div>
+    </div>
+</footer>

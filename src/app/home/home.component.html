@@ -1,0 +1,250 @@
+<div class="wrapper">
+    <div class="page-header clear-filter" filter-color="orange">
+        <div class="page-header-image rellax-header" data-rellax-speed="-7" style="background-image: url('assets/img/boeing.jpg');">
+
+        </div>
+        <div class="container" *ngIf="globals.lang == 'en'">
+            <div class="content-center brand">
+                <img class="n-logo" style="max-width: 250px;" src="assets/img/Untitled.png" alt="">
+                <h1 class="h1-seo" style="line-height: 220%">Transpass AVIATION Services and Trading</h1>
+            </div>
+        </div>
+        <div class="container" *ngIf="globals.lang == 'tr'">
+            <div class="content-center brand">
+                <img class="n-logo" style="max-width: 250px;" src="assets/img/Untitled.png" alt="">
+                <h1 class="h1-seo" style="line-height: 220%">TRANSPASS Havacılık Hizmetleri ve Ticaret</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" *ngIf="globals.lang == 'en'">
+        <div class="section" style="background-color:#f5f3f1 !important">
+            <div class="container text-center">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12 col-lg-8">
+                        <h2 class="title">
+                            Commercial aviation company for the purchase and sale of aircraft and spare parts, Aircraft leasing on dry lease
+                        </h2>
+                        <div class="separator separator-primary"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="section-story-overview" style="padding: 0px">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="image-container image-left" style="background-image: url('assets/img/new/front.jpeg')">
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 center">
+                            <h3 style="margin-top: 100px;">Our Biggest Goal is </h3>
+                            <p>
+                                to train and deliver high quality of professional pilots training in our industry at the mean time.
+                            </p>
+                            <p>
+                                As well we can provide a wide range of Airplane parts and engines that could fit all of your  request as a  customers with fast and safe delivery. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 center">
+                            <h3 style="margin-top: 100px;">All Our Administrators are</h3>
+                            <p>
+                                experienced pilots and airmen that can serve and advise you around the clock to achieve your request in a very professional and safe environment on time.
+                            </p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <div class="image-container image-right" style="background-image: url('assets/img/new/top.jpeg')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-size">
+        </div>
+        <div class="section" style="background-color:#f5f3f1 !important; padding-top: 0px">
+            <div class="container">
+                <div class="col-md-8 center">
+                    <h2 class="title">- About Transpass -</h2>
+                    <h5 class="description"> 
+                        Our company has a modern  park of Boeing 737 aircraft with all the equipment and certificate that are required to be on board to achieve safe flight and time schedules on time.
+                        Our main directions of operation is charter flight,
+                        we can offer a great deals for wet lease and dry lease that can be arranged world wide.
+
+                        Our very experienced engineering team and our special department of expertise we can offer you the best deals of buying and selling airplane. 
+                        We can offer you all kinds of aviation contracts from heavy lifting to ambulance flights and air taxi flights worldwide.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="text-center" style="font-family: 'Prata';">
+                    Some Pictures Of Our Aircrafts
+                </h2>
+                <br>
+                slide to see more
+                <swiper [config]="config">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" style="width: 650px !important;" *ngFor="let image of images" [src]="image">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </swiper>
+            </div>
+        </div>
+
+        <div class="section section-signup" style="background-image: url('assets/img/earth.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+            <div class="container login-page">
+              <div class="row">
+                <div class="col-md-10 content-center ml-auto mr-auto" style="margin-top: 6%">
+                    <p class="text-center" style="color: #ffffff; font-size:45px;font-family: 'Prata';">
+                        Whether you have a question about features, pricing or anything else, our team is ready to answer all your questions.
+                    <p>
+                </div>
+              </div>
+                <div class="col text-center">
+                    <a routerLink="/contact" class="btn btn-simple btn-round btn-white" style="color: #ffffff;border-color: #ffffff; font-size: 18px">GET IN TOUCH</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="text-center" style="font-family: 'Prata';">
+                   -  Our Partners -
+                </h2>
+                <br>
+                slide to see more
+                <swiper [config]="config">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" *ngFor="let image of partner">
+                            <div class="col-md-6 center" style="margin-top: 19px;">
+                                <div class="card card-body">
+                                    <img class="swiper-slide" style="width: 650px !important;margin-top: 0%;" [src]="image.image">
+                                    <hr>
+                                    <h3 class="text-center">{{image.name}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </swiper>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" *ngIf="globals.lang == 'tr'">
+        <div class="section" style="background-color:#f5f3f1 !important">
+            <div class="container text-center">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12 col-lg-8">
+                        <h2 class="title">
+                            Uçak ve yedek parça alım ve satımı için ticari havacılık şirketi, Kuru kiralamada uçak kiralama
+                        </h2>
+                        <div class="separator separator-primary"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="section-story-overview" style="padding: 0px">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="image-container image-left" style="background-image: url('assets/img/new/front.jpeg')">
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 center">
+                            <h3 style="margin-top: 100px;">En Büyük Amacımız</h3>
+                            <p>
+                                endüstrimizde aynı zamanda yüksek kalitede profesyonel pilot eğitimi eğitmek ve sunmaktır.
+                            </p>
+                            <p>
+                                Ayrıca hızlı ve güvenli teslimat ile müşteriniz olarak tüm taleplerinize uyabilecek çok çeşitli Uçak parçaları ve motorları sağlayabiliriz.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 center">
+                            <h3 style="margin-top: 100px;">Tüm Yöneticilerimiz</h3>
+                            <p>
+                                çok profesyonel ve güvenli bir ortamda gerçekleştirmek için 24 saat boyunca size hizmet ve tavsiyede bulunabilir deneyimli pilotlar ve havacılar.
+                            </p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <div class="image-container image-right" style="background-image: url('assets/img/new/top.jpeg')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-size">
+        </div>
+        <div class="section" style="background-color:#f5f3f1 !important; padding-top: 0px">
+            <div class="container">
+                <div class="col-md-8 center">
+                    <h2 class="title">- Transpass Hakkında -</h2>
+                    <h5 class="description">
+                        Şirketimiz, zamanında güvenli uçuş ve zaman çizelgeleri elde etmek için gemide bulunması gereken tüm donanıma ve sertifikaya sahip modern bir Boeing 737 uçağı parkına sahiptir. Faaliyetlerimizin ana yönü charter uçuşudur, ıslak kiralama ve kuru kiralama için dünya çapında düzenlenebilen harika fırsatlar sunabiliriz. Çok deneyimli mühendislik ekibimiz ve özel uzmanlık departmanımızla uçak alım satım işlemlerinde size en iyi fiyatları sunabiliriz. Ağır kaldırmadan ambulans uçuşlarına ve dünyadaki hava taksi uçuşlarına kadar her türlü havacılık sözleşmesini sunabiliriz.
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="text-center" style="font-family: 'Prata';">
+                    Uçaklarımızın Bazı Resimleri
+                </h2>
+                <br>
+                Görmek için kaydırın
+                <swiper [config]="config">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" style="width: 650px !important;" *ngFor="let image of images" [src]="image">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </swiper>
+            </div>
+        </div>
+
+        <div class="section section-signup" style="background-image: url('assets/img/earth.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+            <div class="container login-page">
+                <div class="row">
+                <div class="col-md-10 content-center ml-auto mr-auto" style="margin-top: 6%">
+                    <p class="text-center" style="color: #ffffff; font-size:45px;font-family: 'Prata';">
+                        Özellikler, fiyatlandırma veya başka bir şeyle ilgili sorunuz olursa, ekibimiz tüm sorularınıza cevap vermeye hazır.
+                    <p>
+                </div>
+                </div>
+                <div class="col text-center">
+                    <a routerLink="/contact" class="btn btn-simple btn-round btn-white" style="color: #ffffff;border-color: #ffffff; font-size: 18px">TEMASTA KALIN</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2 class="text-center" style="font-family: 'Prata';">
+                   -  Ortaklarımız -
+                </h2>
+                <br>
+                Görmek için kaydırın
+                <swiper [config]="config">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" *ngFor="let image of partner">
+                            <div class="col-md-6 center" style="margin-top: 19px;">
+                                <div class="card card-body">
+                                    <img class="swiper-slide" style="width: 650px !important;margin-top: 0%;" [src]="image.image">
+                                    <hr>
+                                    <h3 class="text-center">{{image.name}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </swiper>
+            </div>
+        </div>
+    </div>
+</div>

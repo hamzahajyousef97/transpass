@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
+  <div class="container">
+    <div class="navbar-translate">
+        <a *ngIf="globals.lang == 'en'" class="navbar-brand" routerLink="/" placement="bottom" ngbTooltip="Transpass Aviation Service LTD Company">
+            <span style="font-size:30px; font-style: italic;font-weight: 900">TAS. </span> LTD
+        </a>
+        <a *ngIf="globals.lang == 'tr'" class="navbar-brand" routerLink="/" placement="bottom" ngbTooltip="Transpass Havacılık Servisi LTD Şirketi">
+          <span style="font-size:30px; font-style: italic;font-weight: 900">TAS. </span> LTD
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+        </button>
+    </div>
+    <div *ngIf="globals.lang == 'en'" class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/">
+                <i class="fas fa-home" style="font-size:17px;margin-right:5px"></i>
+                  <p> Home</p>
+              </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">
+                <i class="now-ui-icons tech_headphones" style="font-weight:900;font-size:16px;margin-right:2px;"></i>
+                <p>Contact</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" placement="bottom" ngbTooltip="Follow us on Twitter" href="https://twitter.com/TranspassC" target="_blank">
+                <i class="fab fa-twitter"></i>
+                <p class="d-lg-none d-xl-none">Twitter</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" placement="bottom" ngbTooltip="Like us on Facebook" href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+                <p class="d-lg-none d-xl-none">Facebook</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" placement="bottom" ngbTooltip="Follow us on Instagram" href="https://www.instagram.com/t.a.s.b737/?hl=en" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <p class="d-lg-none d-xl-none">Instagram</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-left: 30px;" (click)="setLang('tr')" placement="bottom" ngbTooltip="Türkçe dilinde göstermek için tıklayın.">
+                <span class="d-sm-none">TR</span>
+                <p class="d-lg-none d-xl-none">Türkçe</p>
+              </a>
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf="globals.lang == 'tr'" class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/">
+              <i class="fas fa-home" style="font-size:17px;margin-right:5px"></i>
+                <p> Ana Sayfa</p>
+            </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">
+              <i class="now-ui-icons tech_headphones" style="font-weight:900;font-size:16px;margin-right:2px;"></i>
+              <p>Bize ulaş</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" placement="bottom" ngbTooltip="Bizi Twitter'da takip edin" href="https://twitter.com/TranspassC" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <p class="d-lg-none d-xl-none">Twitter</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" placement="bottom" ngbTooltip="Facebook'ta bizi beğenin" href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <p class="d-lg-none d-xl-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" placement="bottom" ngbTooltip="Bizi instagramda takip et" href="https://www.instagram.com/t.a.s.b737/?hl=en" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <p class="d-lg-none d-xl-none">Instagram</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-left: 30px;" (click)="setLang('en')" placement="bottom" ngbTooltip="Click to Show in English">
+              <span class="d-sm-none">EN</span>
+              <p class="d-lg-none d-xl-none">English</p>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
